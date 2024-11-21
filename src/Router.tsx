@@ -6,6 +6,8 @@ function Router() {
   return (
     <BrowserRouter>
       <Switch>
+        {/* JSON 파일과 같은 정적 파일 경로를 제외 */}
+        <Route path="/data/*.json" />
         <Route path={"/:coinId"}>
           <Coin />
         </Route>
