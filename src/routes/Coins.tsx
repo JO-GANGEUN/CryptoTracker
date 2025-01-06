@@ -71,7 +71,10 @@ function Coins() {
         <title> Coins</title>
       </Helmet>
       <Header>
-        <Title> Coins</Title>
+        <Title>
+          {" "}
+          Coins<button onClick={toggleTheme}>Toggle Mode</button>
+        </Title>
       </Header>
       {isLoading ? (
         <Loader> "Loading ..."</Loader>
